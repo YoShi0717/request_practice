@@ -33,7 +33,7 @@ def login(acn,pwd):
 def change_name():
     global cookie
     now = datetime.now()
-    my_nickname = now.strftime("%Y%m%d%H%M%S")
+    my_nickname = now.strftime("我的名字%Y%m%d%H%M")
     my_data ={'userNick':my_nickname}
     my_header = {'Content-Type' : 'application/json','Cookie':cookie}
     json_data = json.dumps(my_data)
